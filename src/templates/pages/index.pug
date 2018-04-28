@@ -1,0 +1,76 @@
+extends ../_template
+
+block variables
+  - var title = 'Главная страница'
+
+block content
+
+
+  //- sidebar
+  include ../common/sidebar.pug
+
+  section.main
+    .main__menu
+      include ../common/menu.pug
+
+    .main__cont
+      .main__title
+        .h3
+          h3 Безлиминтый интернет
+        .title
+          span DN-650 за 500
+          br
+          span руб/мес
+
+    .main-sidebar#main-sidebar
+      .main-sidebar__cont
+        .main-sidebar__btn
+          a(href="#")#main-sidebar_link
+            span.arr__left &#8592;
+            span Весь сайт
+
+        .main-sidebar__list
+          .main-sidebar__item1
+            each val in ['О компании', 'Отзывы', 'Вакансии', 'Контакты']
+              ul
+                li
+                  a(href="#") #{val}
+          .main-sidebar__item2
+            each val in ['Услуги', 'Инструкции', 'Документы', 'Тарифы']
+              ul
+                li
+                  a(href="#") #{val}
+          .main-sidebar__item1
+            each val in ['Личный кабинет', 'Подключится', 'Техподдержка', 'База знаний']
+              ul
+                li
+                  a(href="#") #{val}
+          .main-sidebar__item1
+            each val in ['+7 (928) 555-44-33', 'Задать вопрос']
+              ul
+                li
+                  a(href="#") #{val}
+
+        .social
+          .social__btn
+            a.social__link.social__link-vk(href="#") &#10084; Нравиться
+              span.vk__count 1
+
+  section.slider-content
+    include ../common/slider-content.pug
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

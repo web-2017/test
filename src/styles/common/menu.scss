@@ -1,0 +1,46 @@
+.main__menu {
+  width: 100%;
+  min-height: 60px;
+  position: relative;
+  float: left;
+}
+
+.nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-30%);
+  left: 0;
+  &__menu,
+  &__icon {
+    float: left;
+    padding-right: 20px;
+
+    ul {
+      margin: 0;
+      padding: 0;
+      li {
+        display: inline-block;
+        vertical-align: middle;
+      }
+      a {
+        text-decoration: none;
+        color: #ffffff;
+        padding: 0 10px;
+      }
+    }
+  }
+}
+.nav__icon {
+  position: relative;
+  height: 50px;
+  width: 30px;
+  display: inline-block;
+  cursor: pointer;
+}
+.nav__btn {
+  height: 3px;
+  width: 100%;
+  background: #fff;
+  display: block;
+  margin: 5px 0;
+}

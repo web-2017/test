@@ -1,0 +1,54 @@
+// colors
+// $lgreen: #00bfa5;
+// $green: #009688;
+// $grey: #455a64;
+// $grey2: #6e777c;
+$lgrey: #d6d6d6;
+// $dark: #373e42;
+// $red: #e44845;
+// $blue: #6da3bd;
+// $inp: #f0efea;
+// $footer: #53595d;
+
+// mixins
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+// test start
+$green: #36b1a8;
+$darkGreen: #1ca196;
+$blue: #1b5294;
+// test end
+
+// fonts
+//-roboto
+$robotoR: robotoregular;
+$robotoM: robotomedium;
+$robotoL: robotolight;
+//-Bernier
+$bernierR: bernier_regularregular;
+$bernierD: bernier_distressedregular;
+$bernierS: bernier_shaderegular;
+
+// reset css
+@import "common/normalize";
+
+// fonts
+@import "fonts/stylesheet";
+
+// sections
+@import "common/base";
+@import "common/slider";
+@import "common/menu";
+@import "common/sidebar";
+@import "pages/footer";
+@import "common/slider_content";
+
+// pages
+@import "pages/about";
+@import "pages/home";

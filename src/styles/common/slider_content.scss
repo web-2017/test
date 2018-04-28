@@ -1,0 +1,62 @@
+$width: 45%;
+
+.slider-content {
+  box-sizing: border-box;
+  padding: 3px;
+  height: 100%;
+  float: left;
+  width: 57%;
+}
+
+.boxs {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.box {
+  &__item {
+    width: $width;
+    height: 350px;
+    overflow: hidden;
+    box-sizing: border-box;
+    background: #efefef;
+    margin: 15px 0;
+
+    &-blue {
+      background: $blue;
+    }
+
+    &:hover {
+      .box__img {
+        height: 55%;
+        transform: scale(1.1);
+        img {
+        }
+      }
+    }
+
+    &-double {
+      width: $width * 2.1;
+    }
+  }
+  &__img {
+    height: 65%;
+    overflow: hidden;
+    transition: 0.3s all;
+    img {
+      display: block;
+      max-width: 100%;
+    }
+  }
+
+  &__cont {
+    text-align: justify;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 0.9em;
+    p {
+      margin: 0;
+    }
+  }
+}

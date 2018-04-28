@@ -1,0 +1,15 @@
+.sidebar
+  .logo
+    img.img-logo(src='images/bg/logo.png')
+
+  .sidebar-menu
+    .menu
+      .menu__btn
+        a(href="#")#menu__link Для дома
+      .menu__list
+        ul.menu__ul
+          each item in ['Услуги', 'Инструкции', 'Документы', 'Тарифы']
+            li
+              a(href="#") #{item}
+      .menu__btn.menu__btn-blue
+        a(href="#") Для Бизнеса

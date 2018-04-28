@@ -1,0 +1,26 @@
+footer.footer
+  .section-footer
+    .footer__left
+      ul.menu
+        each item in ['Мои работы', 'Обо мне', 'Блог', 'Авторизация']
+          li.menu__item
+            a(href="#").menu__link #{item}
+
+    .footer__right
+      .socials-icons
+        ul.socials
+          li.socials__item
+            a(href="#").social__link
+              svg(width='55' height='55').icon.vk_round
+                use(xlink:href='images/icons/sprite.svg#vk_round')
+          li.socials__item
+            a(href="#").social__link
+              svg(width='55' height='55').icon.github_round
+                use(xlink:href='images/icons/sprite.svg#github_round')
+          li.socials__item
+            a(href="#").social__link
+              svg(width='55' height='55').icon.in_round
+                use(xlink:href='images/icons/sprite.svg#in_round')
+
+
+
