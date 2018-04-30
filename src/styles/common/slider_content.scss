@@ -5,58 +5,76 @@ $width: 45%;
   padding: 3px;
   height: 100%;
   float: left;
-  width: 57%;
+  width: 800px;
+  @include clearfix();
+  position: relative;
 }
 
 .boxs {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
+  width: 800px;
+  overflow: hidden;
+  position: relative;
+  height: 650px;
 }
-
+.wrap__box {
+  width: 1600px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: 0.5s;
+}
 .box {
   &__item {
-    width: $width;
-    height: 350px;
+    width: 350px;
+    height: 300px;
+    background: #cccccc;
+    float: left;
+    margin: 20px;
     overflow: hidden;
-    box-sizing: border-box;
-    background: #efefef;
-    margin: 15px 0;
+    text-align: center;
 
-    &-blue {
-      background: $blue;
-    }
+    position: relative;
+    left: 0;
 
     &:hover {
       .box__img {
-        height: 55%;
-        transform: scale(1.1);
+        height: 190px;
         img {
+          transform: scale(1.1);
         }
       }
     }
 
-    &-double {
-      width: $width * 2.1;
-    }
-  }
-  &__img {
-    height: 65%;
-    overflow: hidden;
-    transition: 0.3s all;
-    img {
-      display: block;
-      max-width: 100%;
+    &-blue {
+      background: $blue;
     }
   }
 
-  &__cont {
-    text-align: justify;
-    padding: 10px;
-    box-sizing: border-box;
-    font-size: 0.9em;
-    p {
-      margin: 0;
+  &__img {
+    height: 210px;
+    transition: 0.3s;
+    overflow: hidden;
+    img {
+      width: 350px;
+      max-width: 100%;
+      height: 210px;
+      box-sizing: border-box;
+      transition: 0.3s;
     }
   }
+}
+
+#btnRigth {
+  position: absolute;
+  right: -50px;
+  top: 50%;
+  font-size: 2em;
+  width: 50px;
+  height: 50px;
+  background: #555;
+  text-align: center;
+  border-radius: 50%;
+  color: #fff;
+  transform: translateY(-50%);
+  cursor: pointer;
 }

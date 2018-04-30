@@ -32,16 +32,19 @@
   }
 
   .show {
-    display: block;
+    // display: block;
+    height: 130px;
+    padding: 20px 0;
   }
 
   &__list {
     background: $darkGreen;
     text-align: center;
-    padding: 20px 0;
     position: relative;
-    display: none;
-    transition: 0.2s;
+    // display: none;
+    transition: 0.4s;
+    height: 0px;
+    overflow: hidden;
 
     a {
       text-decoration: none;

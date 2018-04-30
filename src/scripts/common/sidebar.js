@@ -8,14 +8,14 @@ function menu() {
 
     /*ON javascript */
 
-    // let subMenu = document.querySelector(".menu__list");
-    // let parentElem = e.target.parentElement;
+    let subMenu = document.querySelector(".menu__list");
+    let parentElem = e.target.parentElement;
 
-    // if (parentElem.classList.contains("menu__btn")) {
-    //   subMenu.classList.toggle("show");
-    // }
+    if (parentElem.classList.contains("menu__btn")) {
+      subMenu.classList.toggle("show");
+    }
 
     /*ON jQuery*/
-    $(".menu__list").fadeToggle();
+    // $(".menu__list").fadeToggle();
   });
 }

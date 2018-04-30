@@ -26,6 +26,17 @@ body {
   font: 16px/1.46 robotoregular, Arial sans-serif;
 }
 
+@mixin clearfix() {
+  &:before,
+  &:after {
+    content: "";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
 .wrapper {
   height: 100%;
   width: 100%;
